@@ -1,38 +1,118 @@
-.App {
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  
+
+}
+.navbar h1{
+ 
+  align-items: center;
+  margin-left: 50px;
+  
+  max-height: 8vh;
+  display: flex;
+  
+}
+.nav-image{
+  height: 10vh;
+}
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+
+}
+.book-list{
+  min-height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 70px;
+  align-items: flex-end;
+ 
+}
+img{
+  max-width: 300px;
+  max-height: 300px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+  
+
+}
+
+
+.book{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px 0px;
+}
+button{
+  padding: 10px;
+  background-color:black;
   color: white;
+  max-width: 300px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  color: black;
+  background:rgba(51, 51, 51, .5);
+ 
 }
+.book h4{
+  max-width: 200px;
+}
+body{
+  background-color:khaki;
+}
+.book-details{
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  margin: 50px;
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
+}
+.book-image{
+ max-height: 40vh;
+}
+.book-description{
+ max-height: 30vh;
 }
